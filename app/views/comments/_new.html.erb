@@ -1,0 +1,10 @@
+<strong>New Comment</strong>
+
+<%= form_for([@post, Comment.new], remote: false) do |form| %>
+	Your comment:<br>
+	<%= form.text_area :body, size: '50x15' %>
+	<br>
+	<%= form.submit %>
+<% end %>
+
+<%= link_to 'Back', posts_path %>

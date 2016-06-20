@@ -1,0 +1,8 @@
+<p>
+	<%= comment.body %>
+	<br>
+	<small>(<%= comment.created_at.to_s(:long) %>)</small>
+	
+	<br>
+	<small><%= link_to "Delete comment", post_comment_path(@post,comment), method: :delete %></small>
+</p>
